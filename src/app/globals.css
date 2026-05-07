@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #030a26;
+  --color-light: #051040;
+  --color-second: #778da9;
+  --color-accent: #1a398d;
+}
+
+.for-testing-colors {
+  color: #848fbe;
+}
+
+body {
+  @apply bg-light text-white;
+}
+
+.navbar-top-padding {
+  @apply pt-16;
+}
+
+div.content {
+  @apply container flex flex-col px-2 lg:px-0;
+}
+
+section {
+  @apply flex justify-center py-8;
+}
+
+button {
+  cursor: pointer;
+}
+
+.link-navbar {
+  @apply hover:text-blue-400 transition-colors tracking-wide uppercase font-medium text-base;
+}
+
+.link-brand {
+  @apply rounded-full bg-sky-500/40 px-3 py-1 text-sm font-semibold uppercase tracking-[0.2em] text-sky-300 hover:brightness-90;
+}
+
+.auth-background {
+  @apply px-8 py-10 rounded-md bg-dark border border-white/10 shadow-xl shadow-slate-950/40 lg:w-auto w-full;
+}
+
+/* FORMS */
+
+.form-sign-up {
+  @apply lg:w-md;
+}
+
+.form-label {
+  @apply block mb-2.5 font-medium text-lg;
+}
+
+.form-input {
+  @apply bg-second/50 rounded-md focus:ring-accent focus:ring focus:border-accent block w-full px-3 py-2.5 shadow-xs outline-none;
+}
+
+.form-group {
+  @apply mb-5;
+}
+
+.btn {
+  @apply px-4 py-1 rounded-md text-lg font-semibold bg-accent transition-colors active:scale-95 hover:brightness-90;
+}
+
+/* FORMS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
