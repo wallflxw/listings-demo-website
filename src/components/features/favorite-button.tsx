@@ -17,7 +17,7 @@ export default function FavoriteButton({ listingID, isFavorite }: { listingID: s
     }
 
     return (
-        <div className="absolute top-4 right-4 bg-blue-600 p-1 rounded-lg shadow-lg hover:bg-blue-800 transition-colors">
+        <div className="absolute right-2 top-2 lg:top-4 lg:right-4 bg-blue-600 p-1 rounded-lg shadow-lg hover:bg-blue-800 transition-colors">
             <form action={handleAction} className="flex items-center">
                 <input type="hidden" name="listingID" value={listingID} />
                 <button type="submit" aria-label="Add to favorite">

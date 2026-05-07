@@ -24,7 +24,7 @@ export default function AuthLinks() {
     }, [supabase.auth])
 
     if (isLoading) {
-        return <div className="w-60 h-10 bg-gray-900 animate-pulse rounded-full translate-x-3"></div>;
+        return <div className="w-60 h-6 lg:h-7 bg-gray-900 animate-pulse rounded-full"></div>;
     }
 
     if (user) {

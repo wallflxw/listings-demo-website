@@ -7,10 +7,6 @@
   --color-accent: #1a398d;
 }
 
-.for-testing-colors {
-  color: #848fbe;
-}
-
 body {
   @apply bg-light text-white;
 }

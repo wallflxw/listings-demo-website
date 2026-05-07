@@ -17,7 +17,7 @@ export default function ProfileDropdown({ user }: { user: User }) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/favorites" className="block px-4 py-2 hover:bg-second/10">
+                        <Link href="/profile/favorites" className="block px-4 py-2 hover:bg-second/10">
                             Favorites
                         </Link>
                     </li>

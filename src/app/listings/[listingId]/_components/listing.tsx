@@ -42,7 +42,7 @@ export default async function ListingContent({ listing }: { listing: Listing }) 
                 </span>
                 <span className="px-1 bg-slate-700 rounded text-lg font-semibold  w-fit">{listing?.type}</span>
                 <p className="text-gray-300 mt-4 text-lg">{listing?.description ?? "No description available"}</p>
-                <ul className="space-y-4 pl-4 mt-4 text-xl">
+                <ul className="space-y-4 lg:pl-4 mt-4 text-xl">
                     <li>
                         Rooms: {listing?.rooms}
                     </li>
@@ -55,7 +55,7 @@ export default async function ListingContent({ listing }: { listing: Listing }) 
                 </ul>
                 <p className="mt-auto text-xl">Contacts: TODO</p>
                 <p className="p-3 mt-auto w-fit bg-blue-600 rounded-lg">
-                    <span className="text-3xl font-semibold tracking-wider">${listing?.price?.toLocaleString()}</span>
+                    <span className="text-2xl lg:text-3xl font-semibold tracking-wider">${listing?.price?.toLocaleString()}</span>
                 </p>
                 {isOwner && (
                     <div className="flex gap-4">

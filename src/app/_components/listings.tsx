@@ -19,7 +19,7 @@ export default async function LastListings() {
                 <Suspense fallback={<ListingGridSkeleton />}>
                     <ListingsGrid />
                 </Suspense>
-                <Link href="/listings" className="btn mt-4">View All Listings</Link>
+                <Link href="/listings" className="btn mt-4 lg:mb-0 mb-4">View All Listings</Link>
             </div>
         </section>
     );

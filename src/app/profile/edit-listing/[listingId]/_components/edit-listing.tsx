@@ -30,7 +30,7 @@ export default function EditListingForm({ listing }: { listing: Listing }) {
     return (
         <>
             <FixedErrorMessage state={state} />
-            <div className="grid grid-cols-2">
+            <div className="grid lg:grid-cols-2">
                 <form action={formAction}>
                     <div className="grid grid-cols-3 gap-4">
                         <div className="form-group">
